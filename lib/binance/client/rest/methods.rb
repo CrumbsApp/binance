@@ -65,6 +65,14 @@ module Binance
         # #my_trades
         { name: :my_trades, client: :signed,
           action: :get, endpoint: :my_trades },
+
+        # #trade_fee
+        { name: :trade_fee, client: :signed,
+          action: :get, endpoint: :trade_fee },
+        # #asset_detail
+        { name: :asset_detail, client: :signed,
+          action: :get, endpoint: :asset_detail },
+
         # #listen_key
         { name: :listen_key, client: :verified,
           action: :post, endpoint: :user_data_stream },
